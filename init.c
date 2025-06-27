@@ -6,7 +6,7 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:29 by ybahri            #+#    #+#             */
-/*   Updated: 2025/06/21 00:44:08 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/06/25 12:43:51 by ybahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ static void	philo_init(t_table *table)
 		philo->meals_counter = 0;
 		philo->table = table;
 		philo->last_meal_time = 0;
-		//mallocate mutex
 		philo->philo_mutex = malloc(sizeof(t_mtx));
 		if (!philo->philo_mutex)
 			error_exit("Malloc failed for philo_mutex");

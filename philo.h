@@ -6,7 +6,7 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:42 by ybahri            #+#    #+#             */
-/*   Updated: 2025/06/21 00:44:12 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/06/25 12:43:53 by ybahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 #include <sys/time.h>
 #include <limits.h>
 #include <errno.h>
-
-//#define DEBUG_MODE 0
 
 typedef enum e_status
 {
@@ -49,7 +47,7 @@ typedef enum e_time_code
 	MICROSECOND,
 }			t_time_code;
 
-typedef	pthread_mutex_t	t_mtx; //code more readable??
+typedef	pthread_mutex_t	t_mtx;
 typedef struct s_table t_table;
 
 typedef struct	s_fork
@@ -66,7 +64,7 @@ typedef struct	s_philo
 	long		last_meal_time;
 	t_fork		*first_fork;
 	t_fork		*second_fork;
-	pthread_t	thread_id;//??
+	pthread_t	thread_id;
 	t_mtx		*philo_mutex;
 	t_table		*table;
 }				t_philo;
@@ -79,12 +77,12 @@ typedef struct s_table
 	long		time_to_eat;
 	long		time_to_sleep;
 	long		meal_limit;
-	long		start_simulation;//when starts?
-	bool		simulation_end;//philo dies or all full
-	bool		all_threads_created;//to synchronize threads
-	long		threads_running_nbr;//to synchronize threads
+	long		start_simulation;
+	bool		simulation_end;
+	bool		all_threads_created;
+	long		threads_running_nbr;
 	pthread_t	monitor;
-	t_mtx		table_mutex;//avoid races while reading from table
+	t_mtx		table_mutex;
 	t_mtx		write_mutex;
 	t_fork		*forks;
 	t_philo		*philos;
@@ -126,7 +124,6 @@ void	de_synchro_philos(t_philo *philo);
 
 //write
 void	write_status(t_philo_status status, t_philo *philo);
-//void	write_status_debug(t_philo_status status, t_philo *philo, long elapsed);
 
 //dinner
 void	*dinner_simulation(void *data);

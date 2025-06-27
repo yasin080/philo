@@ -6,7 +6,7 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:37 by ybahri            #+#    #+#             */
-/*   Updated: 2025/06/21 00:44:11 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/06/25 12:43:52 by ybahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static const char	*valid_input(const char *str)
 
 	len = 0;
 	while(is_space(*str))
-		str++;//o ++str
+		str++;
 	if(*str == '+')
 		str++;
 	else if(*str == '-')
