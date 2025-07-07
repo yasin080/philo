@@ -6,7 +6,7 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:37 by ybahri            #+#    #+#             */
-/*   Updated: 2025/06/25 12:43:52 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/07/07 20:40:34 by ybahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ static long	ft_atol(const char *str)
 void	parse_input(t_table *table, char **av)
 {
 	table->philo_nbr = ft_atol(av[1]);
-	table->time_to_die = ft_atol(av[2]) * 1000;//para pasar de milisegundos a microsegundos
+	table->time_to_die = ft_atol(av[2]) * 1000;
 	table->time_to_eat = ft_atol(av[3]) * 1000;
 	table->time_to_sleep = ft_atol(av[4]) * 1000;
 	if(table->time_to_die < 60000
