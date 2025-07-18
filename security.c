@@ -6,7 +6,7 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:46 by ybahri            #+#    #+#             */
-/*   Updated: 2025/06/25 12:43:57 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/07/18 12:47:32 by ybahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*safe_malloc(size_t bytes)
 {
-	void	*ret;//porque el malloc es un return de un puntero generico?
+	void	*ret;
 
 	ret = malloc(bytes);
 	if(NULL == ret)

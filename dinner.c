@@ -6,13 +6,12 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:22 by ybahri            #+#    #+#             */
-/*   Updated: 2025/06/25 12:43:54 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/07/07 21:53:49 by ybahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-//todo
 void	thinking(t_philo *philo, bool pre_simulation)
 {
 	long	t_eat = philo->table->time_to_eat;
