@@ -18,7 +18,6 @@ void	wait_all_threads(t_table *table)
 		;
 }
 
-//Monitor waits until all threads are running
 bool	all_threads_running(t_mtx *mtx, long *threads,
 		long philo_nbr)
 {
@@ -30,7 +29,6 @@ bool	all_threads_running(t_mtx *mtx, long *threads,
 	return(ret);
 }
 
-//increase threads running to sync with the monitor
 void	increase_long(t_mtx *mtx, long *value)
 {
 	safe_mutex_handle(mtx, LOCK);
