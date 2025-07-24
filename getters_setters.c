@@ -6,7 +6,7 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:27 by ybahri            #+#    #+#             */
-/*   Updated: 2025/07/24 11:45:33 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/07/24 20:25:53 by ybahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void	set_long(t_mtx *mtx, long *dest, long value)
 	safe_mutex_handle(mtx, LOCK);
 	*dest = value;
 	safe_mutex_handle(mtx, UNLOCK);
-}
+} 
 
 bool	simulation_end(t_table *table)
 {

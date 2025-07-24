@@ -6,7 +6,7 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:42 by ybahri            #+#    #+#             */
-/*   Updated: 2025/07/24 11:47:23 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/07/24 20:39:49 by ybahri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,6 @@ typedef enum e_opcode
 
 typedef enum e_time_code
 {
-	SECOND,
 	MILLISECOND,
 	MICROSECOND,
 }			t_time_code;
