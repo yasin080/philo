@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:42 by ybahri            #+#    #+#             */
-/*   Updated: 2025/07/22 10:28:20 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/07/24 11:47:23 by ybahri           ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
@@ -122,7 +122,7 @@ bool	all_threads_running(t_mtx *mtx, long *threads,
 void	increase_long(t_mtx *mtx, long *value);
 void	de_synchro_philos(t_philo *philo);
 
-//write
+//write_status
 void	write_status(t_philo_status status, t_philo *philo);
 
 //dinner

@@ -1,4 +1,4 @@
-/******************************************************************************/
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
@@ -6,9 +6,9 @@
 /*   By: ybahri <ybahri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/03 15:17:50 by ybahri            #+#    #+#             */
-/*   Updated: 2025/07/22 10:28:23 by ybahri           ###   ########.fr       */
+/*   Updated: 2025/07/24 11:51:19 by ybahri           ###   ########.fr       */
 /*                                                                            */
-/******************************************************************************/
+/* ************************************************************************** */
 
 #include "philo.h"
 
@@ -34,7 +34,7 @@ void	error_exit(const char *error)
 	printf("%s\n", error);
 	exit(EXIT_FAILURE);
 }
-
+//spinlock 55
 void	precise_usleep(long	usec, t_table *table)
 {
 	long	start = get_time(MICROSECOND);
@@ -52,7 +52,6 @@ void	precise_usleep(long	usec, t_table *table)
 			usleep(remaining/2);
 		else
 		{
-			//spinlock
 			while(get_time(MICROSECOND) - start < usec)
 				;
 		}
